@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.page-loader {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: #272727;
+  z-index: 1000;
+}
+.page-loader .txt {
+  color: #666;
+  text-align: center;
+  top: 40%;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.page-loader .txt :nth-child(2) {
+  position: absolute;
+  top: calc(50% + 15px);
+  left: calc(50% + 50px);
+  width: 2px;
+  height: 2px;
+  background: #666;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: 0.5s;
+  -webkit-animation: div1 1.5s infinite ease;
+          animation: div1 1.5s infinite ease;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.page-loader .txt :nth-child(3) {
+  position: absolute;
+  top: calc(50% + 15px);
+  left: calc(50% + 60px);
+  width: 2px;
+  height: 2px;
+  background: #666;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: 0.5s;
+  -webkit-animation: div2 1.5s infinite ease;
+          animation: div2 1.5s infinite ease;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.page-loader .txt :nth-child(4) {
+  position: absolute;
+  top: calc(50% + 15px);
+  left: calc(50% + 70px);
+  width: 2px;
+  height: 2px;
+  background: #666;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-animation: div3 1.5s infinite ease;
+          animation: div3 1.5s infinite ease;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.page-loader .spinner {
+  position: relative;
+  top: 35%;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-animation: sk-scaleout 1.5s infinite ease-in-out;
+  animation: sk-scaleout 1.5s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes sk-scaleout {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes div1 {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes div1 {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes div2 {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes div2 {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes div3 {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes div3 {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=styles.css.map */
